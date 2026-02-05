@@ -1,0 +1,12 @@
+[
+  {
+    "shot_id": "shot_001",
+    "name": "Neon Archive",
+    "scene": "Subterranean data vault with holographic stacks.",
+    "camera": "50mm, low angle, shallow depth.",
+    "lighting": "Magenta rim light, soft teal fill.",
+    "pose": "Standing, holding a glowing tablet.",
+    "created_at": "2024-05-01T12:05:00Z",
+    "updated_at": "2024-05-01T12:05:00Z"
+  }
+]

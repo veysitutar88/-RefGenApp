@@ -1,0 +1,112 @@
+.app-shell {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr) 320px;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: rgba(10, 11, 15, 0.98);
+  padding: 24px 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #7f5bff, #33d6f7);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+}
+
+.brand h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.brand p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-link {
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s ease;
+}
+
+.nav-link.active {
+  background: rgba(127, 91, 255, 0.2);
+  color: #fff;
+  border: 1px solid rgba(127, 91, 255, 0.5);
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.status-pill {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(51, 214, 247, 0.15);
+  border: 1px solid rgba(51, 214, 247, 0.5);
+  color: #7ef2ff;
+  width: fit-content;
+}
+
+.workspace {
+  padding: 28px 32px 40px;
+}
+
+@media (max-width: 1200px) {
+  .app-shell {
+    grid-template-columns: 200px minmax(0, 1fr);
+  }
+  .inspector {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+  }
+  nav {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}

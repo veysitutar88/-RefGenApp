@@ -1,0 +1,61 @@
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.filter-group select {
+  background: rgba(6, 8, 12, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+
+.output-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  cursor: pointer;
+}
+
+.output-thumb {
+  height: 120px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(127, 91, 255, 0.3), rgba(51, 214, 247, 0.3));
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.output-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.output-meta h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.output-meta p {
+  margin: 4px 0 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}
+
+.output-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.output-actions .secondary-button {
+  font-size: 12px;
+}

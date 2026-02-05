@@ -1,0 +1,61 @@
+.output-details .details-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details-header h3 {
+  margin: 0;
+}
+
+.details-header p {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.lineage {
+  margin-top: 16px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  display: grid;
+  gap: 4px;
+}
+
+.qc-summary {
+  margin-top: 16px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.qc-summary ul {
+  padding-left: 18px;
+}
+
+.action-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.manifest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.manifest-item {
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

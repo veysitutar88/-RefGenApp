@@ -1,0 +1,63 @@
+.inspector {
+  background: rgba(14, 16, 22, 0.98);
+  padding: 24px;
+  border-left: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inspector header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inspector h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.status-tag {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(127, 91, 255, 0.2);
+  border: 1px solid rgba(127, 91, 255, 0.5);
+  font-size: 11px;
+}
+
+.inspector-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ghost-button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: inherit;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.ghost-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.json-panel {
+  background: rgba(6, 8, 12, 0.9);
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  overflow: auto;
+  flex: 1;
+}
+
+.json-panel pre {
+  margin: 0;
+  white-space: pre-wrap;
+}
